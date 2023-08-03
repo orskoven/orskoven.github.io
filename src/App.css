@@ -152,3 +152,89 @@ a {
   max-height: 1000px; /* You might need to adjust this value */
   white-space: normal;
 }
+
+.category {
+  margin: 15px 0;
+  border-left: 3px solid #666;
+  padding-left: 15px;
+}
+
+.project-tile {
+  flex: 0 0 auto;
+  width: 200px; /* You can adjust this */
+  margin-right: 15px;
+  padding: 10px 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.project-tile:hover .description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.project-tile .description {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.project-tile h3 {
+  margin: 0;
+  color: #333;
+}
+
+.project-tile .date {
+  color: #777;
+}
+
+.project-tile ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.project-tile .view-project-button {
+  display: block;
+  background: #0099cc;
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.project-tile .view-project-button:hover {
+  background: #0077a3;
+}
+
+.category {
+  margin-bottom: 30px;
+}
+
+.project-container {
+  display: flex;
+  overflow-x: auto;
+  /* ... other styles as needed */
+}
+
+.project-tile {
+  flex: 0 0 auto;
+  width: 200px; /* You can adjust this */
+  margin-right: 15px;
+  padding: 10px 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
