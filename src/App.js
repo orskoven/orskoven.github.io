@@ -3,6 +3,7 @@ import './App.css';
 import AboutMe from './AboutMe';
 import Skills from './Skills';
 import Projects from './Projects';
+import AcedemusExamIOSGif from './AcedemusExamIOSGif';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         </p>
       </header>
       <main className="content">
+      <AcedemusExamIOSGif />
   <AboutMe />
   <Skills />
   <Projects />
